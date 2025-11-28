@@ -1,0 +1,60 @@
+/**
+ * Canonical FYTRUP Note IDs
+ * Normalization in classifier.js maps:
+ *   "note-001" → "FYTRUP-001"
+ *   "fytrup-001" → "FYTRUP-001"
+ *   "NOTE-001" → "FYTRUP-001"
+ * etc.
+ */
+export const NOTES = [
+  "FYTRUP-001",
+  "FYTRUP-002",
+  "FYTRUP-003",
+  "FYTRUP-004",
+  "FYTRUP-005",
+  "FYTRUP-006",
+  "FYTRUP-007",
+  "FYTRUP-008",
+  "FYTRUP-009",
+  "FYTRUP-010",
+  "FYTRUP-011",
+  "FYTRUP-012",
+  "FYTRUP-013",
+  "FYTRUP-014",
+  "FYTRUP-015",
+  "FYTRUP-016",
+  "FYTRUP-017",
+  "FYTRUP-018",
+  "FYTRUP-019",
+  "FYTRUP-020",
+  "FYTRUP-021",
+  "FYTRUP-022",
+  "FYTRUP-023",
+  "FYTRUP-024",
+  "FYTRUP-025",
+  "FYTRUP-026",
+  "FYTRUP-027",
+  "FYTRUP-028",
+  "FYTRUP-029",
+  "FYTRUP-030",
+  "FYTRUP-031",
+  "FYTRUP-032",
+  "FYTRUP-033",
+  "FYTRUP-034",
+  "FYTRUP-035",
+  "FYTRUP-036",
+  "FYTRUP-037",
+  "FYTRUP-038",
+  "FYTRUP-039",
+  "FYTRUP-040",
+  "FYTRUP-041",
+  "FYTRUP-042",
+  "FYTRUP-043",
+  "FYTRUP-044",
+  "FYTRUP-045",
+  "FYTRUP-046",
+  "FYTRUP-047",
+  "FYTRUP-048",
+  "FYTRUP-049",
+  "FYTRUP-050"
+];

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <link rel="icon" href="%sveltekit.assets%/favicon.png" />
+
+    <!-- PWA Manifest (relative for SvelteKit prerender/GitHub Pages) -->
+    <link rel="manifest" href="%sveltekit.assets%/manifest.json">
+
+    <!-- iOS Icons -->
+    <link rel="apple-touch-icon" href="%sveltekit.assets%/icons/icon-192.png" />
+
+    <meta
+      name="viewport"
+      content="
+        width=device-width,
+        initial-scale=1,
+        maximum-scale=1,
+        user-scalable=no,
+        viewport-fit=cover,
+        shrink-to-fit=no
+      "
+    />
+
+    <!-- Android -->
+    <meta name="theme-color" content="#004c63" />
+
+    <!-- iOS Standalone Mode -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Find Your TRU Path" />
+
+    %sveltekit.head%
+  </head>
+
+  <body data-theme="tru">
+    <script>
+      if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+      }
+
+      /**
+       * FYTRUP Alpha12:
+       * Service worker deliberately DISABLED to prevent hydration failures.
+       * Do not re-enable until Alpha12 PWA phase.
+       */
+      // if ("serviceWorker" in navigator) {
+      //   navigator.serviceWorker.register("%sveltekit.assets%/service-worker.js");
+      // }
+    </script>
+
+    <div style="display: contents">
+      %sveltekit.body%
+    </div>
+  </body>
+</html>

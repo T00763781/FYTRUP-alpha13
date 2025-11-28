@@ -1,0 +1,22 @@
+export const POI_FENCES = {
+  wolfie: 25,
+  voxel: 25,
+  torque: 25,
+  summit: 25,
+  stacks: 25,
+  scope: 25,
+  rally: 25,
+  pulse: 25,
+  pixel: 25,
+  nimbus: 25,
+  ledger: 25,
+  goggle: 25,
+  flex: 25,
+  ember: 25,
+  echo: 25,
+  clip: 25,
+  chalk: 25,
+  byte: 25,
+  brief: 25,
+  atlas: 25
+};
