@@ -1,5 +1,5 @@
 // ------------------------------------------------------------
-// mapCore.js — FYTRUP Alpha10 (Persistent Map Singleton)
+// mapCore.js — FYTRUP Alpha13 (Pastel Adventure Map Theme)
 // • Map is created ONCE and reused across all MapView mounts
 // • Container can be reattached cleanly after camera toggles
 // • GitHub Pages–safe, SSR-safe dynamic imports
@@ -63,17 +63,20 @@ export async function initMapCore(container) {
   map.setView(defaultCenter, defaultZoom);
 
   // ------------------------------------------------------------
-  // Add tiles ONCE globally
+  // Add tiles ONCE globally — PASTEL ADVENTURE TILESET
   // ------------------------------------------------------------
   if (!TILE_LAYER_ADDED) {
-    const tileURL = "https://tile.openstreetmap.org/{z}/{x}/{y}.png";
+    const tileURL =
+      "https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}.png";
 
     L.tileLayer(tileURL, {
       maxZoom: 19,
       tileSize: 256,
       keepBuffer: 6,
       updateWhenIdle: false,
-      updateWhenZooming: true
+      updateWhenZooming: true,
+      attribution:
+        '© <a href="https://www.openmaptiles.org/">OpenMapTiles</a> © <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
     }).addTo(map);
 
     TILE_LAYER_ADDED = true;
