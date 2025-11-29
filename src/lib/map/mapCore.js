@@ -67,7 +67,7 @@ export async function initMapCore(container) {
   // ------------------------------------------------------------
   if (!TILE_LAYER_ADDED) {
     const tileURL =
-      "https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}.png";
+      "https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}.png?api_key=32300e86-80f3-47fd-8046-6ec4891cac16";
 
     L.tileLayer(tileURL, {
       maxZoom: 19,
